@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SHORTEN URL</title>
+        <link rel="stylesheet" href="/style.css" type="text/css">
+    </head>
+    <body>
+        {% if error %}
+        <p style="color: red;">{{ error }}</p>
+        {% endif %}
+        {% if new_url %}
+        <p style="color: orange;">Your URL is available <a href='{{ new_url }}'>here</a>!</p>
+        {% endif %}
+        <form action="/create" method="post">
+            <label for="URLTEXT">URL:</label>
+            <input id="URLBOX" name="url" placeholder="URL (eg: https://localhost:8000)"><br>
+            <br><input type="submit" value="Create">
+        </form>
+        <p>{{ total }} total URLs submitted</p>
+        <p>A <i>simple</i> URL shortener, made using Flask</p>
+    </body>
+</html>
