@@ -1,36 +1,15 @@
-html {
-    background-color:gray!important;
-}
-
 body {
-    background-color: #000!important;
-    color:#FFF!important;
-    text-align:center!important;
-    box-sizing: border-box;
-    width: 600px;
-    margin: 50px auto;
-    padding: 40px;
-    text-align: center;
+    background-color: #000;
+    color: #FFF!important;
+}
+.button, h1, h2, input[type="submit"] {
+    color:hotpink!important;
 }
 
-a:unvisited {
-    color:#0000FF;
+h1, h2 {
+    font-variant: small-caps!important;
 }
 
-a:visited {
-    color:#805AD5
-}
-
-a:hover {
-    color:#FF5349
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: transparent;
-  color: white;
-  text-align: center;
+.credit {
+    font-size: 10px;
 }
